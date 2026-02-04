@@ -161,13 +161,22 @@ h6 {
 .mac-link:visited,
 .play-store-link:link,
 .play-store-link:visited {
-  background: var(--color-primary);
+  background: linear-gradient(
+    105deg,
+    var(--color-neviblue-rgba) 0%,
+    var(--color-aqua-rgba) 100%
+  );
   color: var(--color-white);
   padding: 10px 20px;
   font-weight: 500;
   border-radius: 23px;
   letter-spacing: 0.3px;
   transition: all 0.5s;
+  line-height: 22px;
+}
+
+.play-store-link:link,
+.play-store-link:visited {
 }
 
 .bi-apple {
