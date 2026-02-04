@@ -1,9 +1,12 @@
 /* Colos */
 
 :root {
-  --color-primary:;
+  --color-primary: #4b8ef1;
   --color-secondary:;
   --color-white: #ffffff;
+  --color-aqua-rgba: rgba(40, 225, 253, 1);
+  --color-neviblue-rgba: rgba(91, 104, 235, 1);
+  --text-color: #2a2a2a;
 
   --border-rgba-01: 1px solid rgba(42, 42, 42, 0.2);
 
@@ -23,10 +26,6 @@
 html,
 body {
   background: var(--color-white);
-}
-
-body {
-  position: relative;
 }
 
 ul {
@@ -88,6 +87,7 @@ a {
 
 .hero-section {
   width: 100%;
+  margin-top: 8rem;
 }
 
 .hero-container {
