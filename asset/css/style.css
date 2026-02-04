@@ -283,16 +283,39 @@ h6 {
   color: var(--color-white);
 }
 
-.col-sw:hover img {
-  background-image: url(../images/service-icon-01.png);
+.icon-img-1,
+.icon-img-2,
+.icon-img-3,
+.icon-img-4 {
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 50px;
+  height: 50px;
+  margin: 0 0 15px auto;
+  transition: all 0.3s;
 }
 
-.work-icon {
-  text-align: right;
+.icon-img-1 {
+  background-image: url(../images/service-icon-01.png);
 }
-.work-icon img {
-  /*  work now */
-  margin-bottom: 15px;
+.icon-img-2 {
+  background-image: url(../images/service-icon-02.png);
+}
+.icon-img-3 {
+  background-image: url(../images/service-icon-03.png);
+}
+.icon-img-4 {
+  background-image: url(../images/service-icon-04.png);
+}
+
+.col-sw:hover .work-icon-1 {
+  background-image: url(../images/service-icon-hover-01.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 50px;
+  height: 50px;
+  margin: 0 0 15px auto;
+  z-index: 22;
 }
 
 .col-sw h4 {
