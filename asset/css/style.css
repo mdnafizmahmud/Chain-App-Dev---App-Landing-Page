@@ -2,11 +2,12 @@
 
 :root {
   --color-primary: #4b8ef1;
-  --color-secondary:;
+  --color-secondary: #0d6efd;
   --color-white: #ffffff;
   --color-aqua-rgba: rgba(40, 225, 253, 1);
   --color-neviblue-rgba: rgba(91, 104, 235, 1);
-  --text-color: #2a2a2a;
+  --text-deep-black-color: #2a2a2a;
+  --text-ass-color: #afafaf;
 
   --border-rgba-01: 1px solid rgba(42, 42, 42, 0.2);
 
@@ -26,6 +27,8 @@
 html,
 body {
   background: var(--color-white);
+  font-family: "Roboto", sans-serif;
+  scroll-behavior: smooth;
 }
 
 ul {
@@ -36,6 +39,28 @@ a {
   text-decoration: none;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--text-deep-black-color);
+  font-weight: 700;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.aj-flex {
+  align-items: center;
+  justify-content: center;
+}
+
+.col-gap {
+  gap: 1rem;
+}
 /* //////////////////////////////////// */
 /* HEADER SECTION */
 /* //////////////////////////////////// */
@@ -87,25 +112,124 @@ a {
 
 .hero-section {
   width: 100%;
-  margin-top: 8rem;
+  /* margin-top: 13rem; */
+  padding-top: 12rem;
+  padding-bottom: 1.875rem;
 }
 
 .hero-container {
   padding: 0 0.75rem;
   margin: 0 auto;
+  text-align: center;
 }
 
 .hero-title {
+  font-size: 3.125rem;
+  line-height: 4.375rem;
+  margin-bottom: 1.25rem;
 }
 
 .hero-text {
+  font-size: 15px;
+  line-height: 1.875rem;
+  color: var(--text-ass-color);
+  margin-bottom: 45px;
+  font-weight: 400;
 }
 
 .download-container {
 }
 
 .mac {
+  display: inline-block;
 }
 
-.mac-link {
+.mac-link:link,
+.mac-link:visited,
+.play-store-link:link,
+.play-store-link:visited {
+  background: var(--color-primary);
+  color: var(--color-white);
+  padding: 10px 20px;
+  font-weight: 500;
+  border-radius: 23px;
+  letter-spacing: 0.3px;
+  transition: all 0.5s;
+}
+
+.bi-apple {
+  margin-bottom: 3px;
+}
+.bi-apple,
+.bi-google-play {
+  margin-left: 5px;
+}
+
+.hero-img {
+  width: 100%;
+  margin-top: 2rem;
+}
+
+.hero-img img {
+  width: 100%;
+  object-fit: cover;
+}
+
+/* //////////////////////////////////// */
+/* SERVICES SECTION */
+/* //////////////////////////////////// */
+
+.services-section {
+  padding-top: 8.125rem;
+  position: relative;
+}
+
+.services-section::before {
+  content: "";
+  background-image: url(../images/services-right-dec.png);
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 1136px;
+  height: 244px;
+  z-index: 0;
+}
+.services-container {
+  position: relative;
+  z-index: 22;
+  text-align: center;
+}
+
+.services-title {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.services-title span {
+  color: var(--color-primary);
+}
+
+.line-img {
+  width: 100%;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.line-img img {
+  width: 45px;
+  height: 2px;
+}
+.services-text {
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: 300;
+  color: var(--text-ass-color);
+  width: 60%;
+  margin: 0 auto;
+}
+
+.services-text a:link,
+.services-text a:visited {
+  color: var(--color-secondary);
 }
