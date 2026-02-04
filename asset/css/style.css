@@ -12,6 +12,7 @@
   --border-rgba-01: 1px solid rgba(42, 42, 42, 0.2);
 
   --shadow-rgba-01: 0px 5px 8px rgba(0, 0, 0, 0.03);
+  --shadow-rgba-02: 0px 0px 15px rgba(0, 0, 0, 0.1);
 }
 
 /* //////////////////////////////////// */
@@ -37,6 +38,13 @@ ul {
 
 a {
   text-decoration: none;
+}
+
+p {
+  font-size: 15px;
+  color: var(--text-ass-color);
+  font-weight: 300;
+  line-height: 30px;
 }
 
 h1,
@@ -195,6 +203,19 @@ h6 {
   height: 244px;
   z-index: 0;
 }
+
+.services-section::after {
+  content: "";
+  background-image: url(../images/services-left-dec.png);
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 0;
+  bottom: -330px;
+  width: 261px;
+  height: 368px;
+  z-index: 0;
+}
+
 .services-container {
   position: relative;
   z-index: 22;
@@ -220,16 +241,90 @@ h6 {
   width: 45px;
   height: 2px;
 }
+
 .services-text {
-  font-size: 15px;
-  line-height: 30px;
-  font-weight: 300;
-  color: var(--text-ass-color);
   width: 60%;
   margin: 0 auto;
+  margin-bottom: 80px;
 }
 
 .services-text a:link,
 .services-text a:visited {
   color: var(--color-secondary);
+}
+
+.services-work {
+  width: 100%;
+  padding: 0 12px;
+}
+
+.col-sw {
+  width: 100%;
+  background: var(--color-white);
+  box-shadow: var(--shadow-rgba-02);
+  padding: 30px;
+  transition: all 0.3s;
+  border-radius: 10px;
+  border-top-right-radius: 50px;
+  margin-bottom: 30px;
+}
+
+.col-sw:hover {
+  background-image: url(../images/service-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-size: cover;
+}
+
+.col-sw:hover h4,
+.col-sw:hover p,
+.col-sw:hover a:link,
+.col-sw:hover a:visited {
+  color: var(--color-white);
+}
+
+.col-sw:hover img {
+  background-image: url(../images/service-icon-01.png);
+}
+
+.work-icon {
+  text-align: right;
+}
+.work-icon img {
+  /*  work now */
+  margin-bottom: 15px;
+}
+
+.col-sw h4 {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.col-sw p {
+  margin-bottom: 20px;
+}
+
+.col-sw a:link,
+.col-sw a:visited {
+  color: var(--color-secondary);
+}
+
+.work-link {
+}
+
+.work-link a:link,
+.work-link a:visited {
+  color: var(--color-secondary);
+  font-size: 15px;
+
+  /* icon base */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bi-arrow-right-short {
+  font-size: 24px;
+  margin-left: 5px;
+  line-height: 23px;
 }
