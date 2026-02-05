@@ -236,12 +236,14 @@ h6 {
   text-align: center;
 }
 
+.clients-title,
 .about-title,
 .services-title {
   font-size: 30px;
   margin-bottom: 10px;
 }
 
+.clients-title span,
 .about-title span,
 .services-title span {
   color: var(--color-primary);
@@ -258,6 +260,7 @@ h6 {
   height: 2px;
 }
 
+.clients-text,
 .services-text {
   width: 60%;
   margin: 0 auto;
@@ -464,4 +467,8 @@ a:active .bi-arrow-right-short {
   margin-top: 8.125rem;
 }
 .clients-container {
+  text-align: center;
+}
+
+.clients-text {
 }
