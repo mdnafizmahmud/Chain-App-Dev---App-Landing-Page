@@ -262,7 +262,7 @@ h6 {
 
 .clients-text,
 .services-text {
-  width: 60%;
+  width: 80%;
   margin: 0 auto;
   margin-bottom: 80px;
 }
@@ -468,7 +468,34 @@ a:active .bi-arrow-right-short {
 }
 .clients-container {
   text-align: center;
+  padding: 0 12px;
 }
 
-.clients-text {
+.clients-review-box {
+  width: 100%;
+}
+
+.clients-review {
+  margin-bottom: 3rem;
+}
+
+.clients-review h6 {
+  font-size: 20px;
+  font-weight: 500;
+}
+.clients-review:hover h6 {
+  color: var(--color-primary);
+}
+.date {
+  color: var(--text-ass-color);
+  font-size: 15px;
+  line-height: 26px;
+}
+
+.star-rating {
+  color: var(--text-ass-color);
+}
+
+.clients-review:hover .star-rating {
+  color: #ff9529;
 }
