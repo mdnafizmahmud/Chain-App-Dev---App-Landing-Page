@@ -236,6 +236,7 @@ h6 {
   text-align: center;
 }
 
+.pricing-title,
 .clients-title,
 .about-title,
 .services-title {
@@ -243,6 +244,7 @@ h6 {
   margin-bottom: 10px;
 }
 
+.pricing-title span,
 .clients-title span,
 .about-title span,
 .services-title span {
@@ -260,6 +262,7 @@ h6 {
   height: 2px;
 }
 
+.pricing-text,
 .clients-text,
 .services-text {
   width: 80%;
@@ -466,6 +469,7 @@ a:active .bi-arrow-right-short {
 .clients-section {
   margin-top: 8.125rem;
 }
+
 .clients-container {
   text-align: center;
   padding: 0 12px;
@@ -494,8 +498,144 @@ a:active .bi-arrow-right-short {
 
 .star-rating {
   color: var(--text-ass-color);
+  margin-top: 0.5rem;
 }
 
 .clients-review:hover .star-rating {
   color: #ff9529;
+}
+
+.review-text-box {
+  display: flex;
+  overflow-x: auto;
+  flex-wrap: nowrap;
+  gap: 2rem;
+  padding: 0 12px 10px 12px;
+}
+
+.review-text {
+  background-image: url(../images/client-bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  border-radius: 50px;
+  padding: 50px 30px;
+  flex-shrink: 0;
+}
+
+.quote-img {
+  text-align: left;
+}
+
+.review-explain {
+  color: var(--color-white);
+  font-style: italic;
+  font-weight: 500;
+  font-size: 1rem;
+  margin-top: 30px;
+}
+
+.cto-img {
+  margin-top: 1rem;
+  width: 100%;
+}
+
+.cto-img img {
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;
+  background-size: cover;
+}
+
+.cto-img-title {
+  width: 100%;
+  margin-top: 15px;
+}
+
+.cto-img-title h6 {
+  font-size: 20px;
+  /* margin-bottom: 15px; */
+}
+
+.cto-img-title p {
+  color: var(--text-deep-black-color);
+  font-weight: 400;
+}
+
+/* //////////////////////////////////// */
+/* CLIENTS SECTION */
+/* //////////////////////////////////// */
+
+.pricing-section {
+  padding-top: 130px;
+}
+
+.pricing-container {
+  text-align: center;
+  padding: 0 12px;
+}
+
+.pricing-title {
+  padding: 0 12px;
+}
+
+.price-box {
+  width: 100%;
+  margin-top: 30px;
+}
+.price-plan {
+  position: relative;
+  padding: 90px 30px;
+  box-shadow: var(--shadow-rgba-03);
+  border-radius: 50px;
+  overflow: hidden;
+}
+
+.price-plan::before {
+  content: "";
+  background-image: url(/asset/images/regular-table-top.png);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 274px;
+  height: 221px;
+}
+
+.price-plan span {
+  position: absolute;
+  font-size: 40px;
+  color: var(--color-white);
+  font-weight: 700;
+  left: 30px;
+  top: 30px;
+}
+
+.price-plan h6 {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.price-img {
+  width: 100%;
+}
+.price-img img {
+  width: 120px;
+  height: 106px;
+  margin-bottom: 30px;
+}
+
+.price-list li {
+  font-size: 15px;
+
+  margin-bottom: 15px;
+}
+
+.price-plan::after {
+  content: "";
+  background-image: url(/asset/images/regular-table-bottom.png);
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 370px;
+  height: 171px;
 }
