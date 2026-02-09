@@ -9,7 +9,7 @@
   --text-deep-black-color: #2a2a2a;
   --text-ass-color: #afafaf;
   --text-dark-ass-color: #7a7a7a;
-
+  --border-color: #eee;
   --border-rgba-01: 1px solid rgba(42, 42, 42, 0.2);
 
   --shadow-rgba-01: 0px 5px 8px rgba(0, 0, 0, 0.03);
@@ -725,6 +725,8 @@ a:active .bi-arrow-right-short {
   content: "";
   position: absolute;
   background-image: url(/asset/images/pro-table-bottom.png);
+  background-repeat: no-repeat;
+  background-position: right;
   width: 100%;
   height: 201px;
   bottom: 0;
@@ -746,10 +748,41 @@ a:active .bi-arrow-right-short {
 /* //////////////////////////////////// */
 
 .footer-section {
+  margin-top: 130px;
+  background-image: url(/asset/images/footer-bg.png);
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 60px;
 }
 .footer-container {
+  padding: 0 12px;
 }
 .footer-title {
+  font-size: 30px;
+  line-height: 45px;
+  width: 75%;
+  text-align: center;
+  margin: 0 auto 10px auto;
+  text-transform: capitalize;
 }
 .cta-form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 45px;
+}
+
+.cta-form input,
+.cta-form button {
+  outline: none;
+  border: 1px solid var(--border-color);
+  background: var(--color-white);
+  padding: 12px 30px;
+  border-radius: 50px;
+  font-size: 15px;
+  color: var(--black-color);
+}
+
+.cta-form button {
+  color: var(--color-primary);
 }
