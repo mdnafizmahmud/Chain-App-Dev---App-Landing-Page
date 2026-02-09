@@ -6,6 +6,7 @@
   --color-white: #ffffff;
   --color-aqua-rgba: rgba(40, 225, 253, 1);
   --color-neviblue-rgba: rgba(91, 104, 235, 1);
+  --color-black: #000000;
   --text-deep-black-color: #2a2a2a;
   --text-ass-color: #afafaf;
   --text-dark-ass-color: #7a7a7a;
@@ -316,7 +317,7 @@ h6 {
   width: 50px;
   height: 50px;
   margin: 0 0 15px auto;
-  transition: all 0.3s;
+  transition: all 0.2s;
 }
 
 .icon-img-1 {
@@ -753,7 +754,7 @@ a:active .bi-arrow-right-short {
   background-position: center top;
   background-repeat: no-repeat;
   background-size: cover;
-  padding-bottom: 60px;
+  padding-bottom: 20px;
 }
 .footer-container {
   padding: 0 12px;
@@ -780,9 +781,81 @@ a:active .bi-arrow-right-short {
   padding: 12px 30px;
   border-radius: 50px;
   font-size: 15px;
-  color: var(--black-color);
+  color: var(--color-black);
 }
 
 .cta-form button {
   color: var(--color-primary);
+  margin-bottom: 45px;
+}
+
+.contact-information {
+  text-align: center;
+  width: 100%;
+  flex-shrink: 0;
+}
+
+.address-col {
+}
+
+.nav-col h6,
+.logo-col h6,
+.address-col h6 {
+  font-size: 20px;
+  color: var(--color-white);
+  margin-top: 45px;
+  margin-bottom: 20px;
+}
+
+.address-col p,
+.address-col p a:link,
+.address-col p a:visited {
+  color: var(--color-white);
+  margin-bottom: 15px;
+}
+
+.nav-col ul li {
+  margin-bottom: 20px;
+}
+
+.nav-col ul li a:link,
+.nav-col ul li a:visited {
+  font-size: 15px;
+  color: var(--color-white);
+  transition: all 0.3s;
+  display: inline-block;
+}
+
+.nav-col ul li a:hover,
+.nav-col ul li a:active {
+  opacity: 0.75;
+}
+
+.logo-img {
+  width: 96px;
+  justify-self: center;
+  margin-bottom: 2rem;
+}
+
+.logo-img img {
+  width: 100%;
+}
+
+.copyrigh-text,
+.logo-col p {
+  color: var(--color-white);
+}
+
+.copyrigh {
+  margin-top: 2rem;
+  padding-top: 0.5rem;
+  text-align: center;
+  border-top: 1px solid var(--border-color);
+}
+
+.copyrigh-text a:link,
+.copyrigh-text a:visited {
+  color: var(--color-white);
+  font-size: 1rem;
+  font-weight: 400;
 }
