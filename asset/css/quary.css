@@ -86,7 +86,7 @@
   }
 
   .clients-review {
-    margin-bottom: 0;
+    margin-bottom: 10px;
   }
 
   .price-plan-active,
@@ -106,5 +106,226 @@
   .cta-form button {
     margin-bottom: 0;
     width: 100%;
+  }
+}
+
+@media (min-width: 48em) {
+  .header {
+    position: fixed;
+    z-index: 222;
+    background: rgb(255, 255, 255, 0.96);
+  }
+  .btn-mobile-nav {
+    display: none;
+  }
+
+  .main-nav {
+    display: block;
+    margin-right: 1rem;
+  }
+
+  .nav li {
+    padding: 0 12px;
+  }
+
+  .nav .nav-link:link,
+  .nav .nav-link:visited {
+    display: block;
+    color: var(--text-deep-black-color);
+    font-weight: 500;
+    font-size: 15px;
+    transition: all 0.3s ease 0s;
+    height: 40px;
+    line-height: 40px;
+    letter-spacing: 1px;
+  }
+
+  .nav .nav-active.nav-link,
+  .nav .nav-link:hover,
+  .nav .nav-link:active {
+    color: var(--color-primary);
+  }
+
+  .nav li:nth-child(6) {
+    background: linear-gradient(
+      105deg,
+      var(--color-neviblue-rgba) 0%,
+      var(--color-aqua-rgba) 100%
+    );
+    border-radius: 23px;
+    margin-left: 1.5rem;
+    padding: 0 16px;
+  }
+
+  .nav li:nth-child(6) .nav-link:link,
+  .nav li:nth-child(6) .nav-link:visited {
+    color: var(--color-white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+  }
+
+  .bi-box-arrow-in-right {
+    font-size: 16px;
+    text-shadow:
+      0 0 1px currentColor,
+      0 0 1px currentColor;
+    margin-top: 2px;
+  }
+
+  .header-container {
+    padding: 0 1.5rem;
+  }
+
+  .hero-section {
+    padding-top: 14rem;
+  }
+
+  .hero-text {
+    padding: 0 12px;
+  }
+
+  .hero-img {
+    padding: 0 24px;
+  }
+
+  .pricing-text,
+  .clients-text,
+  .services-text {
+    width: 65%;
+  }
+
+  .services-work {
+    width: 700px;
+    margin: 0 auto;
+  }
+
+  .icon-img-1,
+  .icon-img-2,
+  .icon-img-3,
+  .icon-img-4 {
+    margin: 0 auto 15px auto;
+  }
+
+  .about-container {
+    margin: 0 16px;
+  }
+
+  .about {
+    width: 690px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .clients-container {
+    margin: 0 20px;
+  }
+
+  .cto-img-box {
+    max-width: 440px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+  }
+
+  .clients-review-box {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .clients-review {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .clients-review div:nth-child(1) {
+    width: auto;
+    padding: 20px 0;
+  }
+
+  .categary {
+    display: block;
+  }
+
+  .categary p {
+    color: var(--text-ass-color);
+    font-weight: 700;
+  }
+
+  .star-rating {
+    width: auto;
+    margin-top: 0;
+    text-align: right;
+  }
+
+  .clients-review {
+    margin-bottom: 30px;
+  }
+
+  .price-plan-active,
+  .price-plan {
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .footer-container {
+    padding-top: 250px;
+  }
+
+  .cta-form {
+    width: 90%;
+  }
+
+  .cta-form input,
+  .cta-form button {
+    width: 100%;
+    font-size: 16px;
+    height: 3rem;
+  }
+
+  .cta-form input {
+    border: none;
+    border-bottom: 1px solid var(--color-white);
+    border-radius: 0;
+    background: transparent;
+    padding: 12px;
+    color: var(--color-white);
+  }
+
+  .cta-form input::placeholder {
+    color: var(--color-white);
+  }
+
+  .cta-form button {
+    background: transparent;
+    color: var(--color-white);
+    transition: all 0.3s;
+  }
+
+  .cta-form button:hover {
+    background: var(--color-white) !important;
+    color: var(--color-primary);
+  }
+
+  .contact-information {
+    text-align: left;
+    padding: 0 24px;
+  }
+
+  .nav-col {
+    width: 70%;
+  }
+
+  .nav-col ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .logo-img {
+    justify-self: left;
   }
 }

@@ -235,6 +235,10 @@ h6 {
   z-index: 0;
 }
 
+.categary {
+  display: none;
+}
+
 .services-container {
   position: relative;
   z-index: 22;
@@ -472,7 +476,7 @@ a:active .bi-arrow-right-short {
 /* //////////////////////////////////// */
 
 .clients-section {
-  margin-top: 8.125rem;
+  padding-top: 8.125rem;
 }
 
 .clients-container {
@@ -796,6 +800,7 @@ a:active .bi-arrow-right-short {
 .cta-form button {
   color: var(--color-primary);
   margin-bottom: 45px;
+  cursor: pointer;
 }
 
 .contact-information {
