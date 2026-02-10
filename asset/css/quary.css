@@ -1,0 +1,110 @@
+/* Colos */
+
+:root {
+  --color-primary: #4b8ef1;
+  --color-secondary: #0d6efd;
+  --color-white: #ffffff;
+  --color-aqua-rgba: rgba(40, 225, 253, 1);
+  --color-neviblue-rgba: rgba(91, 104, 235, 1);
+  --color-black: #000000;
+  --text-deep-black-color: #2a2a2a;
+  --text-ass-color: #afafaf;
+  --text-dark-ass-color: #7a7a7a;
+  --border-color: #eee;
+  --border-rgba-01: 1px solid rgba(42, 42, 42, 0.2);
+
+  --shadow-rgba-01: 0px 5px 8px rgba(0, 0, 0, 0.03);
+  --shadow-rgba-02: 0px 0px 15px rgba(0, 0, 0, 0.1);
+  --shadow-rgba-03: 0px 0px 15px rgba(0, 0, 0, 0.07);
+}
+
+@media (min-width: 36em) {
+  .header-container {
+    padding: 0 1.5rem;
+  }
+
+  .hero-section {
+    padding-top: 14rem;
+  }
+
+  .hero-text {
+    padding: 0 12px;
+  }
+
+  .hero-img {
+    padding: 0 20px;
+  }
+
+  .pricing-text,
+  .clients-text,
+  .services-text {
+    width: 65%;
+  }
+
+  .services-work {
+    width: 540px;
+    margin: 0 auto;
+  }
+
+  .about-container {
+    margin: 0 16px;
+  }
+
+  .clients-container {
+    margin: 0 20px;
+  }
+
+  .cto-img-box {
+    max-width: 440px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+  }
+
+  .clients-review-box {
+    max-width: 440px;
+    margin: 0 auto;
+  }
+
+  .clients-review {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .clients-review div:nth-child(1) {
+    padding: 12px;
+    width: 8rem;
+  }
+
+  .star-rating {
+    width: 7rem;
+  }
+
+  .star-rating {
+    margin-top: 0.8rem;
+  }
+
+  .clients-review {
+    margin-bottom: 0;
+  }
+
+  .price-plan-active,
+  .price-plan {
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .cta-form {
+    flex-direction: row;
+    width: 540px;
+    margin: 0 auto;
+    padding-bottom: 45px;
+  }
+
+  .cta-form button {
+    margin-bottom: 0;
+    width: 100%;
+  }
+}

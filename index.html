@@ -281,8 +281,10 @@
           </p>
           <div class="clients-review-box">
             <div class="clients-review">
-              <h6>David Martino Co</h6>
-              <p class="date">30 November 2021</p>
+              <div>
+                <h6>David Martino Co</h6>
+                <p class="date">30 November 2021</p>
+              </div>
               <div class="star-rating">
                 <i class="bi bi-star-fill"></i>
                 <i class="bi bi-star-fill"></i>
@@ -293,8 +295,10 @@
               </div>
             </div>
             <div class="clients-review">
-              <h6>Jake Harris Nyo</h6>
-              <p class="date">29 November 2021</p>
+              <div>
+                <h6>Jake Harris Nyo</h6>
+                <p class="date">29 November 2021</p>
+              </div>
               <div class="star-rating">
                 <i class="bi bi-star-fill"></i>
                 <i class="bi bi-star-fill"></i>
@@ -305,8 +309,10 @@
               </div>
             </div>
             <div class="clients-review">
-              <h6>May Catherina</h6>
-              <p class="date">27 November 2021</p>
+              <div>
+                <h6>May Catherina</h6>
+                <p class="date">27 November 2021</p>
+              </div>
               <div class="star-rating">
                 <i class="bi bi-star-fill"></i>
                 <i class="bi bi-star-fill"></i>
@@ -317,8 +323,10 @@
               </div>
             </div>
             <div class="clients-review">
-              <h6>Random User</h6>
-              <p class="date">24 November 2021</p>
+              <div>
+                <h6>Random User</h6>
+                <p class="date">24 November 2021</p>
+              </div>
               <div class="star-rating">
                 <i class="bi bi-star-fill"></i>
                 <i class="bi bi-star-fill"></i>
@@ -329,8 +337,10 @@
               </div>
             </div>
             <div class="clients-review">
-              <h6>Mark Amber Do</h6>
-              <p class="date">21 November 2021</p>
+              <div>
+                <h6>Mark Amber Do</h6>
+                <p class="date">21 November 2021</p>
+              </div>
               <div class="star-rating">
                 <i class="bi bi-star-fill"></i>
                 <i class="bi bi-star-fill"></i>
@@ -398,15 +408,17 @@
               </p>
             </div>
           </div>
-          <div class="cto-img">
-            <img
-              src="./asset/images/client-image.jpg"
-              alt="Cto Clients Image"
-            />
-          </div>
-          <div class="cto-img-title">
-            <h6>David Martino</h6>
-            <p>CEO of David Company</p>
+          <div class="cto-img-box">
+            <div class="cto-img">
+              <img
+                src="./asset/images/client-image.jpg"
+                alt="Cto Clients Image"
+              />
+            </div>
+            <div class="cto-img-title">
+              <h6>David Martino</h6>
+              <p>CEO of David Company</p>
+            </div>
           </div>
         </div>
       </section>
@@ -501,8 +513,13 @@
           Join our mailing list to receive the news & latest trends
         </h5>
         <form class="cta-form col-gap">
-          <input type="email" placeholder="Email Address" required />
-          <button type="submit">
+          <input
+            type="email"
+            name="email"
+            placeholder="Email Address"
+            required
+          />
+          <button type="submit" name="submit">
             Subscribe Now <i class="bi bi-chevron-right"></i>
           </button>
         </form>
