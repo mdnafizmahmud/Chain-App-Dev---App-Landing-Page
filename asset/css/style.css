@@ -863,6 +863,6 @@ a:active .bi-arrow-right-short {
 .copyrigh-text a:link,
 .copyrigh-text a:visited {
   color: var(--color-white);
-  font-size: 1rem;
-  font-weight: 400;
+  font-size: 15px;
+  font-weight: 500;
 }
