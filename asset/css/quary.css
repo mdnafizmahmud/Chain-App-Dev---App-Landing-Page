@@ -339,12 +339,12 @@
     left: 0;
     top: 0;
     width: 100%;
-    height: 100%;
+    height: 120%;
     z-index: 1;
   }
 
   .hero-section {
-    padding: 250px 120px 150px 120px;
+    padding: 280px 120px 150px 120px;
   }
 
   .hero-container {
@@ -430,6 +430,10 @@
   .clients-text,
   .services-text {
     width: 50%;
+  }
+
+  .services-section {
+    margin-top: 8.125rem;
   }
 
   .services-work {
@@ -610,6 +614,11 @@
     gap: 1.5rem;
   }
 
+  .copyrigh,
+  .logo-col {
+    padding: 0;
+  }
+
   .logo-col,
   .address-col,
   .nav-col {
@@ -681,10 +690,6 @@
 
   .header-container {
     padding: 0 1.5rem;
-  }
-
-  .hero-section {
-    padding-top: 14rem;
   }
 
   .hero-text {
@@ -996,6 +1001,10 @@
 
   .hero-img {
     padding: 0 24px;
+  }
+
+  .services-section {
+    margin-top: 8.125rem;
   }
 
   .pricing-text,
